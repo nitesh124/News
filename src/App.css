@@ -1,0 +1,73 @@
+body {
+  background: #ccc;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ .listbox{
+   padding: 5px !important;
+                 
+             
+ }
+ .listboxin{
+   padding: 10px !important;
+     -webkit-box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.21);
+-moz-box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.21);
+box-shadow: 1px 1px 1px 2px rgba(0,0,0,0.21);
+             
+             
+ }
+ .listbox h6{ 
+   padding: 1px 5px  !important; 
+            margin: 5px 0px;
+            cursor: pointer;
+ }
+ .listbox span{ 
+   padding: 1px 5px  !important; 
+            margin: 5px 0px;
+ }
+ .listboxheader{
+   font-size: 20px;
+   margin: 20px;
+   color: crimson;
+   text-align: center;
+ }
+ .container{
+   background: #fff;
+   padding: 10px 20px;
+ }
+ .row {
+     
+      margin-right: 0px !important;  
+      margin-left: 0px !important;  
+}
