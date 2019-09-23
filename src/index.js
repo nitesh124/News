@@ -8,11 +8,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Media from 'react-bootstrap/Media';
 import Modal from 'react-bootstrap/Modal';
 import Image from 'react-bootstrap/Image';
 import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 import * as serviceWorker from './serviceWorker';
+import {Header, Navigation,} from 'react-mdl';
 
 class Mynewscomp extends React.Component {
 
@@ -32,7 +32,7 @@ class Mynewscomp extends React.Component {
 
     componentDidMount() {
 
-        axios.get('Paste Required API')
+        axios.get('Paste required API')
             .then((response) => {
                 // console.log(response.data);
                 var parseString = require('xml2js').parseString;
@@ -87,9 +87,14 @@ class Mynewscomp extends React.Component {
             return (
                 <>
                     <Col xs={12} md={12}>
-                        <h5 className="listboxheader"> News Flow </h5>
+                    <Header className="header-color">
+            <Navigation>
+            <h5 className="listboxheader"> News Flow </h5>
+            </Navigation>
+        </Header>
+                        
                     </Col>
-                    <Container>
+                    {/* <Container> */}
                         <Row>
 
 
@@ -128,7 +133,7 @@ class Mynewscomp extends React.Component {
                             </Modal>
 
                         </Row>
-                    </Container>
+                    {/* </Container> */}
                 </>
             );
         }
